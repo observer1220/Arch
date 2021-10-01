@@ -26,27 +26,26 @@ export default {
 <style lang="scss" scoped>
 .index_container{
   position: relative;
-  margin: 0 auto;
-  margin-top: 70px;
+  margin: 70px auto;
   .parallax_scroll{
-    height: 600px;
     background-attachment: fixed;
     background-image: url('https://www.highwealth.com.tw/img/about/about-1.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     animation: animation 5s linear;
     @keyframes animation {
       from {
         background-position: 0% 100%;
-        opacity: 0%;
+        opacity: 0;
       }
       to {
         background-position: 0% 0%;
-        opacity: 100%;
+        opacity: 1;
       }
     }
     .textbox{
       width: 50%;
-      height: 400px;
+      height: 600px;
       display: flex;
       flex-direction: column;
       justify-content: center;

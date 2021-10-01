@@ -2,7 +2,7 @@
   <div class="ProjectField">
     <h3>最新建案 Properties</h3>
     <el-carousel class="imageUrl" indicator-position="outside" height="500px">
-      <el-carousel-item v-for="item in banner" :key="item.id" :interval="10000" arrow="always">
+      <el-carousel-item v-for="item in banner" :key="item.id" :interval="9000" arrow="always">
         <img :src="item.imageUrl" alt="">
       </el-carousel-item>
     </el-carousel>
@@ -23,7 +23,8 @@ export default {
 </script>
 <style lang="scss">
 .ProjectField{
-  height: 500px;
+  max-width: 1080px;
+  margin: 60px auto;
   h3{
     text-align: center;
     font-weight: 900;

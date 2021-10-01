@@ -1,6 +1,7 @@
 <template>
   <div class="footer">
     <ul class="left_side">
+      <li>此網站僅供「聖煒國際」測試使用，非「潤隆建設」官方網站</li>
       <li>營業時間：週一至週五 09:00~18:00</li>
       <li>公司地址：高雄市仁武區仁勇西巷9號</li>
       <li>聯絡電話：0910-868-737</li>
@@ -10,7 +11,7 @@
     </ul>
     <div class="right_side">
       <div class="list">
-        <router-link to="/">關於弘大</router-link>
+        <router-link to="/">關於潤隆</router-link>
         <router-link to="/news">企業訊息</router-link>
       </div>
       <div class="list">
@@ -24,13 +25,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
 <style lang="scss">
 .footer{
   display: flex;
