@@ -34,6 +34,7 @@ export default {
     display: flex;
     justify-content: center;
     img{
+      max-width: 100%;
       object-fit: contain;
     }
   }
