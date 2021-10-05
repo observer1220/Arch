@@ -38,7 +38,7 @@
         filter: grayscale(1);
         margin: 20px;
         width: 200px;
-        height: 80px;
+        height: 70px;
         object-fit: contain;
         cursor: pointer;
         &:hover{
@@ -49,6 +49,11 @@
     }
   }
 @media (min-width:320px) and (max-width:499px) {
+  .PartnerField{
+    p{
+      font-size: 14px;
+    }
+  }
   .logo_area{
     img{
       max-width: 70px;

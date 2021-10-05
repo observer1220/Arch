@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import ElementUI from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/zh-TW'
 import CKEditor from 'ckeditor4-vue'
+
 // import VueFbCustomerChat from 'vue-fb-customer-chat'
 // Vue.use(VueFbCustomerChat, {
 //   page_id: 109177601492079, // change 'null' to your Facebook Page ID,
@@ -14,7 +15,6 @@ import CKEditor from 'ckeditor4-vue'
 // })
 
 Vue.config.productionTip = false
-
 Vue.use(ElementUI, { locale })
 Vue.use(CKEditor)
 

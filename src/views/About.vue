@@ -60,6 +60,7 @@ export default {
     height: 600px;
     background-attachment: fixed;
     background-image: url('https://images.unsplash.com/photo-1470004914212-05527e49370b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80');
+    background-repeat: no-repeat;
     background-size: cover;
     animation: animation 5s linear;
     @keyframes animation {
@@ -125,7 +126,6 @@ export default {
     }
   }
   .main_box2{
-    /* display: flex; */
     max-width: 1280px;
     margin: 100px auto;
     .main_text2{
@@ -164,7 +164,7 @@ export default {
     flex-direction: column;
   }
 }
-@media (min-width:320px) and (max-width:499px) {
+@media (min-width:320px) and (max-width:667px) {
   .about{
     .fade_in_title{
       font-size: 24px;
@@ -178,12 +178,11 @@ export default {
   .main_box{
     display: flex;
     flex-direction: column;
-    height: auto;
+    align-items: center;
   }
   .main_box2{
     display: flex;
     flex-direction: column;
-    height: auto;
   }
 }
 </style>

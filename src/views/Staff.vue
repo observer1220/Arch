@@ -57,15 +57,8 @@ export default {
 <style  lang="scss">
 .users{
   max-width: 450px;
-  margin: 0 auto;
+  margin: 90px auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 150px;
-
-}
-@media (min-width:320px) and (max-width:767px) {
-  .users{
-    margin-top: 140px;
-  }
 }
 </style>

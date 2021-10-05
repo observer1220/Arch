@@ -1,7 +1,7 @@
 <template>
   <div class="ProjectField">
     <h3>最新建案 Properties</h3>
-    <el-carousel class="imageUrl" indicator-position="outside" height="500px">
+    <el-carousel class="imageUrl" indicator-position="outside">
       <el-carousel-item v-for="item in banner" :key="item.id" :interval="9000" arrow="always">
         <img :src="item.imageUrl" alt="">
       </el-carousel-item>
@@ -32,9 +32,8 @@ export default {
   }
   .imageUrl{
     img{
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+      max-width: 100%;
+      /* object-fit: cover; */
     }
   }
 }

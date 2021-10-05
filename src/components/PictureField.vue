@@ -5,7 +5,7 @@
         <img class="pic" src="https://images.unsplash.com/photo-1609147110688-83b5fd1288e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="">
         <router-link to="/about">
           <div class="mask"></div>
-          <div class="text">
+          <div class="textbox">
             <h3>關於潤隆</h3>
             <p>About</p>
           </div>
@@ -15,7 +15,7 @@
         <img class="pic" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="">
         <router-link to="/news">
           <div class="mask"></div>
-          <div class="text">
+          <div class="textbox">
             <h3>投資人專區</h3>
             <p>Investor</p>
           </div>
@@ -27,7 +27,7 @@
         <img class="pic" src="https://images.unsplash.com/photo-1613858749733-3a3e456e3d9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
         <router-link to="/case">
           <div class="mask"></div>
-          <div class="text">
+          <div class="textbox">
             <h3>企業責任</h3>
             <p>CSR Programs</p>
           </div>
@@ -37,7 +37,7 @@
         <img class="pic" src="https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=874&q=80" alt="">
         <router-link to="/case">
           <div class="mask"></div>
-          <div class="text">
+          <div class="textbox">
             <h3>工程實績</h3>
             <p>Properties</p>
           </div>
@@ -47,7 +47,7 @@
         <img class="pic" src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="">
         <router-link to="/contact">
           <div class="mask"></div>
-          <div class="text">
+          <div class="textbox">
             <h3>聯絡我們</h3>
             <p>Contact</p>
           </div>
@@ -84,7 +84,7 @@
         opacity: 0.8;
         transition-duration: 0.5s;
       }
-      .text{
+      .textbox{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -96,7 +96,6 @@
         height: 100%;
         color: white;
         h3{
-          font-size: 24px;
           font-weight: 900;
         }
       }
@@ -126,7 +125,7 @@
         opacity: 0.8;
         transition-duration: 0.5s;
       }
-      .text{
+      .textbox{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -138,7 +137,6 @@
         height: 100%;
         color: white;
         h3{
-          font-size: 24px;
           font-weight: 900;
         }
       }

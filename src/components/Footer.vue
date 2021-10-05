@@ -1,12 +1,11 @@
 <template>
   <div class="footer">
     <ul class="left_side">
-      <li>此網站僅供「聖煒國際」測試使用，非「潤隆建設」官方網站</li>
+      <li>此站為切版範本，非潤隆官網</li>
       <li>營業時間：週一至週五 09:00~18:00</li>
-      <li>公司地址：高雄市仁武區仁勇西巷9號</li>
       <li>聯絡電話：0910-868-737</li>
-      <li>電子郵件：CK.Lee@saint-way.com</li>
-      <li>© 聖煒國際有限公司 Saintway International Co., Ltd</li>
+      <li>© 聖煒國際有限公司</li>
+      <li>Saintway International Co., Ltd</li>
       <li>All rights reserved | <router-link class="privacy_policy" to="/privacy">隱私權條款</router-link></li>
     </ul>
     <div class="right_side">
@@ -25,10 +24,10 @@
     </div>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .footer{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: absolute;
   right: 0;
   left: 0;
@@ -63,6 +62,13 @@
   color: white;
   &:hover{
     color: #E87C19;
+  }
+}
+@media (min-width:320px) and (max-width:499px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>

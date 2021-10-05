@@ -1,10 +1,7 @@
 <template>
   <div class="index_container">
     <div class="parallax_scroll">
-      <div class="textbox">
-        <h2>潤隆建設</h2>
-        <p>創新穩健 台灣營造業領導品牌</p>
-      </div>
+      <img src="../assets/index1.png" alt="">
     </div>
     <PictureField/>
     <ProjectField/>
@@ -28,10 +25,10 @@ export default {
   position: relative;
   margin: 70px auto;
   .parallax_scroll{
-    background-attachment: fixed;
-    background-image: url('https://www.highwealth.com.tw/img/about/about-1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    img{
+      width: 100%;
+      height: auto;
+    }
     animation: animation 5s linear;
     @keyframes animation {
       from {
@@ -41,21 +38,6 @@ export default {
       to {
         background-position: 0% 0%;
         opacity: 1;
-      }
-    }
-    .textbox{
-      width: 50%;
-      height: 600px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      h2{
-        font-weight: 900;
-      }
-      p{
-        font-weight: 900;
       }
     }
   }

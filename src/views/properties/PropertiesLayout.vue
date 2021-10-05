@@ -77,8 +77,8 @@ export default {
       li{
         margin: 5px;
         .thumbnail{
-          width: 350px;
-          height: 350px;
+          max-width: 320px;
+          height: 320px;
           object-fit: cover;
         }
         .article_title{
@@ -89,7 +89,7 @@ export default {
     }
   }
 }
-@media (min-width:500px) and (max-width:767px) {
+@media (min-width:320px) and (max-width:767px) {
   .case_layout_container{
     h3{
       text-align: center;
@@ -99,6 +99,7 @@ export default {
       display: flex;
       align-items: center;
       flex-direction: column;
+      /* justify-content: center; */
       .case_left{
         max-width: 100%;
       }
