@@ -40,11 +40,10 @@ export default {
 .bulletinInfo_container {
   max-width: 940px;
   margin: 90px auto;
+  padding:  16px;
 }
-.article{
-  img{
-    object-fit: contain;
-  }
+img{
+  max-width: 100%;
+  object-fit: contain;
 }
-
 </style>

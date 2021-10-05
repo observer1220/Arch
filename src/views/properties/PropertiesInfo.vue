@@ -39,8 +39,10 @@ export default {
 .caseInfo_container {
   max-width: 940px;
   margin: 90px auto;
+  padding:  16px;
 }
 img{
-  width: 940px;
+    max-width: 100%;
+    object-fit: contain;
 }
 </style>

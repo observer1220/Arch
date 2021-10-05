@@ -59,8 +59,9 @@ export default {
 </script>
 <style lang="scss">
 .bulletin_layout_container{
-  max-width: 940px;
+  max-width: 1080px;
   margin: 90px auto;
+  padding: 0 16px;
   position: relative;
   h3{
     padding: 10px;
@@ -68,7 +69,7 @@ export default {
   .bulletin{
     /* 在此加入高度是因為a連結的圖片預設值為第1則新聞 */
     /* 若中間有空隙，移動鼠標時，側邊的圖片會一直跳掉 */
-    max-width: 400px;
+    max-width: 320px;
     height: 45px;
     font-size: 20px;
     font-weight: 900;
@@ -104,7 +105,7 @@ export default {
       .textbox{
         position: absolute;
         bottom: 0;
-        max-width: 400px;
+        max-width: 320px;
         height: 110px;
         z-index: 10;
         color: white;
@@ -132,7 +133,7 @@ export default {
 .newsPagination{
   margin-top: 20px;
 }
-@media (min-width:500px) and (max-width:767px) {
+@media (min-width:320px) and (max-width:767px) {
   .bulletin_photo{
     display: none;
   }
