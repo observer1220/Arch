@@ -1,10 +1,9 @@
 <template>
   <div class="about_container">
-    <!-- 頁首Banner OK -->
     <div class="parallax_scroll">
+      <img src="../assets/about/banner_0.jpg" alt="">
       <div class="textbox">
-        <h2>關於潤隆</h2>
-        <p>在地五十年 深耕都會 建設偏鄉</p>
+
       </div>
     </div>
     <!-- 公司背景故事 -->
@@ -37,8 +36,6 @@
       </div>
     </div>
     <OrganizationField/>
-    <!-- 視差圖3 -->
-    <div class="parallax_scroll3"></div>
     <AccessField/>
   </div>
 </template>
@@ -57,11 +54,10 @@ export default {
   position: relative;
   margin: 70px auto;
   .parallax_scroll{
-    height: 600px;
-    background-attachment: fixed;
-    background-image: url('https://images.unsplash.com/photo-1470004914212-05527e49370b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80');
-    background-repeat: no-repeat;
-    background-size: cover;
+    img{
+      width: 100%;
+      height: auto;
+    }
     animation: animation 5s linear;
     @keyframes animation {
       from {
@@ -73,33 +69,11 @@ export default {
         opacity: 1;
       }
     }
-    .textbox{
-      position: absolute;
-      width: 50%;
-      height: 600px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      h2{
-        font-weight: 900;
-      }
-      p{
-        font-weight: 900;
-      }
-    }
   }
   .parallax_scroll2{
     height: 600px;
     background-attachment: fixed;
     background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    background-size: cover;
-  }
-  .parallax_scroll3{
-    height: 600px;
-    background-attachment: fixed;
-    background-image: url('https://images.unsplash.com/photo-1496564203457-11bb12075d90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2019&q=80');
     background-size: cover;
   }
   .main_box{

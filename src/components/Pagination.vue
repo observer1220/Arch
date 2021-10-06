@@ -1,5 +1,5 @@
 <template>
-  <el-row>
+  <el-row class="PaginationField">
     <el-col>
       <el-pagination v-if='paginations.total > 0'
         @current-change='handleCurrentChange'
@@ -8,7 +8,9 @@
         :page-sizes="paginations.page_sizes"
         :page-size="paginations.page_size"
         :layout="paginations.layout"
-        :total="paginations.total">
+        :total="paginations.total"
+        :pager-count="paginations.pager_count"
+        background>
       </el-pagination>
     </el-col>
   </el-row>
@@ -24,7 +26,7 @@ export default {
       // 分頁組件相關資料
       paginations: {
         // 總項目數、每頁顯示數、上一頁、分頁、下一頁、跳頁元素
-        layout: 'sizes, prev, pager, next, jumper',
+        layout: 'sizes, prev, pager, next',
         // 當前頁面(起始頁)
         page_index: 1,
         // 當前數據的總數
@@ -32,7 +34,9 @@ export default {
         // 預設單頁顯示數
         page_size: 5,
         // 每頁顯示數
-        page_sizes: [5, 10, 20, 50, 100]
+        page_sizes: [5, 10, 20, 50, 100],
+        // 最大按鈕頁碼數
+        pager_count: 3
       },
       filteredData: []
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="index_container">
     <div class="parallax_scroll">
-      <img src="../assets/index1.png" alt="">
+      <img src="../assets/index/banner_1.jpg" alt="">
     </div>
     <PictureField/>
     <ProjectField/>

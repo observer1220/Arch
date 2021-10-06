@@ -19,7 +19,7 @@
       </div>
     </div>
     <!-- 分頁功能 -->
-    <Pagination v-if="!isFetching" :paginatedData="paginatedData" @update="updatePagination" class="newsPagination"></Pagination>
+    <Pagination v-if="!isFetching" :paginatedData="paginatedData" @update="updatePagination"></Pagination>
   </div>
 </template>
 
@@ -73,7 +73,6 @@ export default {
     height: 45px;
     font-size: 20px;
     font-weight: 900;
-    padding: 10px;
     a{
       color: black;
       text-decoration: none;
@@ -129,9 +128,6 @@ export default {
       }
     }
   }
-}
-.newsPagination{
-  margin-top: 20px;
 }
 @media (min-width:320px) and (max-width:767px) {
   .bulletin_photo{

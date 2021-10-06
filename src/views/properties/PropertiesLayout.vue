@@ -59,15 +59,14 @@ export default {
   max-width: 940px;
   margin: 90px auto;
   position: relative;
+  padding: 0 16px;
   .case_layout{
     display: flex;
     .case_left{
-      max-width: 15%;
+      max-width: 30%;
       display: flex;
       flex-direction: column;
-      li{
-        margin: 5px;
-      }
+      align-items: center;
     }
     .case_right{
       max-width: 85%;
@@ -77,7 +76,7 @@ export default {
       li{
         margin: 5px;
         .thumbnail{
-          max-width: 320px;
+          width: 320px;
           height: 320px;
           object-fit: cover;
         }
@@ -91,6 +90,7 @@ export default {
 }
 @media (min-width:320px) and (max-width:767px) {
   .case_layout_container{
+    padding: 0;
     h3{
       text-align: center;
       font-weight: 900;
