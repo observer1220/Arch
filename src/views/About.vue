@@ -71,15 +71,16 @@ export default {
     }
   }
   .parallax_scroll2{
-    height: 600px;
+    height: 500px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-image: url('https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    background-size: cover;
+    background-size: contain;
   }
   .main_box{
     max-width: 1280px;
     display: flex;
-    margin: 100px auto;
+    margin: 0 auto;
     .main_text{
       display: flex;
       flex-direction: column;
@@ -101,7 +102,7 @@ export default {
   }
   .main_box2{
     max-width: 1280px;
-    margin: 100px auto;
+    margin: 0 auto;
     .main_text2{
       display: flex;
       flex-direction: column;
