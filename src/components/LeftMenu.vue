@@ -84,9 +84,7 @@ export default {
 </script>
 <style lang="scss">
 .menu_page {
-  position: fixed;
-  top: 70px;
-  left: 0;
+  margin: 70px 0;
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
