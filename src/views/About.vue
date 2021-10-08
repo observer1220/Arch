@@ -55,7 +55,7 @@ export default {
       width: 100%;
       height: auto;
     }
-    animation: animation 5s linear;
+    animation: animation 1s linear;
     @keyframes animation {
       from {
         background-position: 0% 100%;

@@ -29,7 +29,7 @@ export default {
       width: 100%;
       object-fit: cover;
     }
-    animation: animation 2s linear;
+    animation: animation 1s linear;
     @keyframes animation {
       from {
         background-position: 0% 100%;
