@@ -68,6 +68,7 @@ export default {
     }
   }
   .parallax_scroll2{
+    width: 100%;
     height: 500px;
     background-attachment: fixed;
     background-repeat: no-repeat;
