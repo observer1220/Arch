@@ -27,9 +27,9 @@ export default {
   .parallax_scroll{
     img{
       width: 100%;
-      height: auto;
+      object-fit: cover;
     }
-    animation: animation 5s linear;
+    animation: animation 2s linear;
     @keyframes animation {
       from {
         background-position: 0% 100%;

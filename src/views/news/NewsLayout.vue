@@ -4,9 +4,11 @@
     <el-divider></el-divider>
     <div class="bulletin" v-for="(item, index) in setData" :key="index" @mouseover="showByIndex = index" @mouseout="showByIndex = 0">
       <!-- 新聞標題 -->
-      <router-link :to="{ path: '/news/' + item.id }">
-        <p>{{ item.title }}</p>
-      </router-link>
+      <div class="bulletin_text">
+        <router-link :to="{ path: '/news/' + item.id }">
+          <p>{{ item.title }}</p>
+        </router-link>
+      </div>
       <!-- 新聞照片 -->
       <div class="bulletin_photo" v-show="showByIndex === index">
         <div class="lid"></div>
@@ -59,7 +61,7 @@ export default {
 </script>
 <style lang="scss">
 .bulletin_layout_container{
-  max-width: 1080px;
+  max-width: 940px;
   margin: 90px auto;
   padding: 0 16px;
   position: relative;
@@ -67,19 +69,23 @@ export default {
     padding: 10px;
   }
   .bulletin{
+    /* display: flex;
+    justify-content: space-between; */
     /* 在此加入高度是因為a連結的圖片預設值為第1則新聞 */
     /* 若中間有空隙，移動鼠標時，側邊的圖片會一直跳掉 */
-    max-width: 320px;
+    max-width: 400px;
     height: 45px;
     font-size: 20px;
     font-weight: 900;
-    a{
-      color: black;
-      text-decoration: none;
-      p{
-        overflow:hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+    .bulletin_text{
+      a{
+        color: black;
+        text-decoration: none;
+        p{
+          overflow:hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
       }
     }
     .bulletin_photo{
@@ -88,23 +94,22 @@ export default {
       right: 0;
       margin-top: 80px;
       img{
-        max-width: 400px;
-        height: 250px;
+        max-width: 350px;
+        height: 300px;
         object-fit: contain;
       }
       .lid{
         position: absolute;
-        z-index: 1;
         bottom: 0;
-        max-width: 400px;
-        height: 110px;
+        max-width: 350px;
+        height: 120px;
         background: black;
-        opacity: 0.7;
+        opacity: 0.6;
       }
       .textbox{
         position: absolute;
         bottom: 0;
-        max-width: 320px;
+        max-width: 350px;
         height: 110px;
         z-index: 10;
         color: white;
