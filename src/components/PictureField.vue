@@ -143,4 +143,11 @@
     }
   }
 }
+@media (min-width:320px) and (max-width:667px) {
+  .textbox{
+    h3{
+      font-size: 16px;
+    }
+  }
+}
 </style>

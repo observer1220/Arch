@@ -1,7 +1,7 @@
 <template>
   <div class="about_container">
     <div class="parallax_scroll">
-      <img src="../assets/about/banner_1.jpg" alt="">
+      <img src="../assets/about/banner_2.jpg" alt="">
     </div>
     <!-- 公司背景故事 -->
     <div class="main_box" id="company">
